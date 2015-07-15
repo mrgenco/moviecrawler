@@ -59,6 +59,9 @@ def crawl_theaters(max_pages, seed_url):
         page += 10
 
 
+# TODO : crawl_movies function must take string parameter as a url instead
+# TODO : crawl_movies function must crawl movie informations for a single theater
+
 def crawl_movies(theaters):
     '''
     This method will crawl movie informations related to theater
