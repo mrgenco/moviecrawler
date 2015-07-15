@@ -1,5 +1,14 @@
 __author__ = 'mrgenco'
 
+''' 
+The purpose of this project is to crawl theater and movie informations
+from http://www.google.com/movies and generate json data structure with it
+
+The purpose is not crawling the entire site so we have max_pages limit 
+as a stop criteria
+
+'''
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -21,6 +30,7 @@ def movie_crawler(max_pages):
 
         print("===========================================")
         page += 10
+
 
 
 movie_crawler(3)
